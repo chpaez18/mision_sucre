@@ -96,7 +96,7 @@ class Session
 		}
 
 		//hacemos el metodo de verificacion del tiempo en sesion
-		Session::tiempo();
+		//Session::tiempo();
 
 		//level hace referencia a una variable de session que guardaremos cuando el usuario inicie sesion y sera el nivel de acceso que tendra ese usuario
 
@@ -167,7 +167,7 @@ class Session
 		}
 
 		//hacemos el metodo de verificacion del tiempo en sesion
-		Session::tiempo();
+		//Session::tiempo();
 
 		//verificamos si se envio el parametro noAdmin
 		if($noAdmin == false){
@@ -201,7 +201,7 @@ class Session
 		}
 
 		//hacemos el metodo de verificacion del tiempo en sesion
-		Session::tiempo();
+		//Session::tiempo();
 
 		//verificamos si se envio el parametro noAdmin
 		if($noAdmin == false){

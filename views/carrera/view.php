@@ -39,9 +39,8 @@ $frm = new HTML();
 
 						<?php
 								foreach ($row as $key => $value){
-
 									$aux = $row[$key]["cod_materia"];
-									echo "<tr> <td>".$row[$key]["codigo"]."</td>";
+									echo "<tr> <td>".$row[$key]["cod_materia"]."</td>";
 									echo "<td>".$row[$key]["nombre_materia"]."</td>";
 									echo "
 									<td  width='39%'>
