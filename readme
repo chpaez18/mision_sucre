@@ -1,0 +1,70 @@
+//explicacion de carpetas
+
+
+├──mvc_1/										//carpeta raiz de la aplicación
+|	├──application/							//aqui va todo el codigo propio de la aplicacion
+|		└──Boostrap.php
+|		└──Config.php
+|		└──Controller.php					//controlador principal del cual extenderan todos los controladores
+|		└──Model.php						//modelo principal del cual extenderan todos los modelos
+|		└──Registro.php
+|		└──Request.php
+|		└──View.php							//vista principal del cual extenderan todos las vistas
+|
+|   ├──controllers/									//contiene los controladores
+|	
+|
+|   ├──libs/										//nuestras librerias
+|
+|   ├──models/										//guardamos aca todos nuestros modelos
+|
+|   ├──public/										//se guardan las hojas de estilos, funciones javascript e imagenes
+|		└──css
+|		└──img
+|		└──js
+|
+|   ├──views/										//se guardan las vistas
+|		└──layouts									//contendra nuestros templates
+|			└──default								//template por default
+|				└──css
+|				└──img
+|				└──js
+|				└──footer.php
+|				└──header.php
+|
+
+
+
+
+
+
+
+
+
+
+
+// explicacion archivo .htaccess
+
+//este archivo hace toda la redirección de nuestro sitio, el interpreta todas las urls y se las va a pasar al archivo index.php
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d  //condicion que dice que, para todas las request que no sean de tipo directorio
+RewriteCond %{REQUEST_FILENAME} !-f  //condicion que dice que, para todas las request que no sean de tipo archivo
+RewriteCond %{REQUEST_FILENAME} !-l  //condicion que dice que, para todas las request que no sean de tipo link
+
+//se hace una regla de dirección
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]    //para todas las peticiones que entren al sitio, vamos a redirigirlo a index.php
+
+
+
+//para armar las url usa:
+
+index.php?url=controlador/metodo/parametros(en caso de que los requiera)
+
+-ejemplo:
+localhost/mvc/public/index.php?url=home/index/3
+
+-ejemplo 2:
+localhost/mvc/public/index.php?url=home/contact

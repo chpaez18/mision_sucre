@@ -1,0 +1,49 @@
+body{
+	
+}
+
+#principal{
+	width: 1700px;
+	height: 800px;
+	border: 1px solid #000000;
+	margin: 0 auto;
+}
+
+
+#cabecera {
+	height: 100px;
+	border:1px solid #000000;
+	margin: 10px;
+}
+
+
+#menu {
+	width: 200px;
+	border:1px solid #000000;
+	margin: 10px;
+	float: left;
+	padding: 10px;
+}
+
+#contenido {
+	width: 578px;
+	border:1px solid #000000;
+	margin: 10px;
+	margin-left: -2px;
+	float: left;
+	padding: 10px;
+}
+
+.clear {
+	clear:both; ;
+}
+
+
+#footer {
+	height: 30px;
+	border: 1px solid #000000;
+	margin: 10px;
+	padding: 10px;
+}
+
+~

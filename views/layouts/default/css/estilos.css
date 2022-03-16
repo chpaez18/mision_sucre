@@ -1,0 +1,668 @@
+/* Estilos Generales */
+
+
+@font-face{
+    /*font-family: 'Source Sans Pro';
+    src: url('C:\xampp\htdocs\mision_sucre\views\layouts\default\fuentes\SourceSansPro-Bold.otf') format('otf');
+*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Arial*/
+    
+ /*   
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+*/
+}
+
+/* Estilos del logo */
+
+.logo {
+    margin-bottom: -3px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  font-size: 15px;
+
+}
+
+
+body {
+    background: #eee;
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 1.15;
+    font-size: 1rem;
+    
+}
+
+.captcha{
+    border-radius: 4px;
+    border-width: 1px;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 45px;
+    border-color: #000000;
+    text-align: center;
+
+}
+
+.panel-head{
+    border:solid;
+    color: #fff;
+    background-color: #0e3f4c;
+    border-top-color: #0e3f4c;
+    border-top-width: 8px;
+    border-left-color: #0b262b;
+    border-left-width: 1px;   
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+
+    border-right-color: #0b262b;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+    border-bottom-color: #0b262b;
+    padding: 6px;
+    font-size: 13px;
+}
+.panel{
+    background-color: #f9f9f9;
+    
+    border: solid;
+    border-top-color: #10373f;
+    border-top-width: 1px;
+    
+
+    border-left-color: #10373f;
+    border-left-width: 1px;    
+
+    border-right-color: #10373f;
+    border-right-width: 1px;
+
+    
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-color: #10373f;
+    padding: 15px;
+}
+
+.contenido-alineado-derecha{
+    float: right;
+}
+
+.contenido-alineado-izquierda{
+    float: left;
+}
+
+.contenido-index{
+    background-color: #f9f9f9;
+    
+    border: solid;
+    border-top-color: #212189;
+    border-top-width: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+    border-left-color: #DDDDDD;
+    border-left-width: 1px;    
+
+    border-right-color: #DDDDDD;
+    border-right-width: 1px;
+
+    
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-color: #DDDDDD;
+    padding: 15px;
+
+}
+
+.contenido {
+    padding: 30px;
+    word-wrap: break-word; 
+    background: #eee;
+}
+
+.navegacion {
+    background: #0e3f4c;
+}
+
+
+.navegacion ul {
+    list-style: none;
+    /* DESCOMENTAR PARA PONER LAS OPCIONES HACIA LA DERECHA
+    float: right;
+    background: #313152;*/
+}
+
+.menu > li {
+    position: relative;
+    display: table-cell;
+
+}
+
+    /*en este selector cambiar el tipo de letra*/
+.menu > li > a {
+    display: block;
+    padding: 15px 25px;
+    color: #DDDDDD;
+    font-family: "Open sans";
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+    color: #fff;
+    background: #50507B;
+    transition: all 0.3s;
+}
+
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+
+}
+
+
+.submenu li a {
+    display: block;
+    padding: 17px;
+    color: #fff;
+    text-decoration: none;
+     width: 100%
+}
+
+.submenu li {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.submenu li a:hover {
+    background: #444;
+
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+
+/* Estilos del Footer */
+
+
+
+footer {
+    background: #0e3f4c;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0px;
+    
+}
+
+.copy {
+    font-size: 17px;
+    
+}
+
+
+.grupo {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+
+
+
+/* Estilos de la paginacion */
+
+.dataTables_paginate {
+    float: right;
+}
+
+.dataTables_paginate>a {
+   display:inline-block;
+   padding: 3px;
+   border: 1px solid #B3B3B3;
+   
+   
+}
+
+.dataTables_paginate>a:hover {
+   background-color: #fff;
+   
+   
+}
+
+.dataTables_paginate>span {
+   display:inline-block;
+  
+}
+
+.dataTables_paginate>span>a {
+   display:inline-block;
+   border: 1px solid #B3B3B3;
+   padding:3px;
+   padding-left: 7px;
+   padding-right: 7px;
+}
+
+.dataTables_paginate>span>a:hover {
+   background-color: #E0E4CC;
+}
+
+
+.dataTables_paginate:hover {
+   cursor: pointer;
+   
+}
+
+.paginate_button {
+    padding: 5px
+}
+
+.paginate_button.next.disabled {
+    background-color: #fff;
+    color: #C6C6C6;
+    cursor: not-allowed;
+}
+
+.paginate_button.previous.disabled {
+    background-color: #fff;
+    color: #C6C6C6;
+    cursor: not-allowed;
+}
+.paginate_button.current {
+    background-color: #E0E4CC;
+ 
+}
+
+
+
+
+
+/* Estilos de mensajes*/
+
+.cont {
+    padding: 0px 5px;
+}
+
+.info_mensaje {
+    padding: 5px; 
+    font-size: 18px; 
+    background-color: #D9EDF7; 
+    color: #31708F; 
+    border: solid 1px #ace4ef; 
+    border-radius: 7px;
+}
+
+.error_mensaje {
+    padding: 5px; 
+    font-size: 18px; 
+    background-color: #F2DEDE; 
+    color: #A94566; 
+    border: solid 1px #eac5ca; 
+    border-radius: 7px;
+}
+
+
+/* Estilos formularios*/
+
+
+
+
+
+
+form {
+    /*margin: auto;
+    width: 50%;
+    max-width: 500px;
+    background: #f3f3f3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;*/
+    margin: auto;
+    width: 90%;
+    max-width: 630px;
+    padding: 30px;
+    
+}
+
+form .head {
+    color: #333;
+    background-color: #f5f5f5;
+    border: solid 1px #ddd;
+    padding: 10px;
+    border-top-color: #212189;
+    border-top-width: 4px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+
+}
+
+form .body-content {
+    background-color: #f4f4f4;
+    border: solid 1px #d1cfcf;
+    padding: 10px;
+}
+
+
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.5);
+}
+
+
+input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 11px 0;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+
+
+.body-content textarea {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    resize: none;
+}
+
+select {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 17px 0;
+    font-size: 15px;
+}
+
+
+
+input[type="submit"] {
+  cursor: pointer;
+    margin-bottom: 0;
+}
+
+
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    
+    form {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    form {
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilos para las Tablas*/
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    opacity: 0.95;
+    width: 85%;
+    border-radius: 10px;
+    
+}
+
+
+th{
+    background: #0e3f4c;
+    color: #DDDDDD;
+    border: 1px solid #103842
+    
+}
+
+td{
+    border: 1px solid #DDDDDD;
+    background: white;
+}
+
+/* pseudo selector que establece un estilo para cada tr par, osea de 2 en 2 va poniendo el color un poco mas gris */
+/*
+tr:nth-child(even){
+    background: #ECF0F1;
+}
+*/
+
+
+/* pseudo selector que funciona igual al de arriba pero esta vez establece un estilo para cada tr impar */
+
+/*
+tr:nth-child(odd){
+    background: white;
+}
+*/
+
+
+.header{
+    background: #446CB3;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    padding-bottom: 0%;
+    border: 1px solid #1F3A93;
+    
+    
+}
+
+
+th,td{
+    text-align: center;
+    padding: 10px;
+}
+
+
+tr:hover{
+    background-color: #F5F5F5;
+}
+
+
+
+/*Estilo para los botones*/
+
+.btn {
+
+    /*
+    estilos originales
+    display: inline-block;
+    padding: 2px ;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    */
+
+    color: #fff;
+    background-color: #0168c5;
+    border-color: #0275d8;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #025395;
+    border-color: #01549b;
+}
+
+
+
+.a-btn {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+    padding: .25rem .9rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.a-btn:hover{
+    background-color: #025aa5;
+    border-color: #01549b;
+}
+
+
+.btn-danger {
+    /*
+    estilos originales
+
+    display: inline-block;
+    padding: 2px ;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+
+    */
+
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d9534f;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border:1px solid transparent;
+    padding: .30rem .5rem;
+    border-radius: .2rem;
+    cursor: pointer;
+
+}
+
+.btn-danger:hover{
+    color:#fff;
+    background-color:#c9302c;
+    border-color:#c12e2a;
+}
+
+
+
+.breadcrumb{
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+
+.breadcrumb::after{
+    display:block;
+    content:"";
+    clear:both
+}
+
+.breadcrumb-item{
+    float:left;
+    text-decoration: none;
+    padding: 3px 1px;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    display:inline-block;
+    padding-right:.5rem;
+    padding-left:.5rem;
+    color:#636c72;
+    content:"/"
+}
+.breadcrumb-item+.breadcrumb-item:hover::before{
+    text-decoration:underline
+}
+.breadcrumb-item+.breadcrumb-item:hover::before{
+    text-decoration:none
+}
+.breadcrumb-item.active{
+    color:#636c72
+}
+
+
+
+
+
+
+
+
+
+
+
+
